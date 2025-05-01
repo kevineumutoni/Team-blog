@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 
 .top-nav{
@@ -62,11 +63,6 @@ body{
     
     
 }
-@keyframes slide{
-    0%{
-        left:100%
-    }
-}
 @media only screen and (max-width:700px) and (min-width:300px){
     .top-nav{
         width: 100%;
@@ -88,7 +84,35 @@ body{
     .head-title h1{
         font-size: 19px;
     }
-    
+    .img img{
+        width: 30%;
+        height: 200px;
+    }
+    .body-content{
+        overflow-x: hidden;
+        display: flex;
+        padding-left: 0;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    .team-content{
+        left: 0;
+        right: 0;
+        height: 500px;
+        width: 100%;
+        display: none;
+        padding: 0;
+    }
+    .main-container{
+        width: 100%;
+        padding: 0;
+        position: relative;
+        left: 0;
+        margin: 0;
+        display: none;
+    }
 
 }
 @media only screen and (max-width:900px) and (min-width:701px){
@@ -112,6 +136,12 @@ body{
         align-items: left;
         font-size: 15px;
     }
+    .main-container{
+        display: none;
+    }
+    .second-container{
+        display: none;
+    }
 
 }
 /* TO BE APPLIED IN EVERY HTML */
@@ -119,19 +149,19 @@ body{
 
 .team-content{
     width:20%;
-    background-color: #a454b4;
+    background-color: #d2d9e7;
     border-top-left-radius: 80px;
     color: wheat;
     border-radius: 20px;
-    padding: 10px;
 
   }
   .team-content:hover{
     background-color: rgb(161, 158, 158);
   }
   .name{
-    color: white;
+    color: rgb(82, 80, 80);
     font-family: "Atomic Age", system-ui;
+    text-align: center;
  
   }
   .name:hover{
@@ -148,7 +178,7 @@ body{
 
   }
   .content-one{
-    color: white;
+    color: rgb(46, 46, 46);
     font-weight:60px;
     font-size: 18px;
 
@@ -157,16 +187,16 @@ body{
     color: #a454b4;
   }
 .main-container{
-    justify-content: space-between;
     display: flex;
-    padding-left: 100px;
-    padding-bottom: 100px;
-    padding-right: 100px;
+    gap:20px;
+    position: relative;
+    left: 90px;
 }
 .second-container{
-    justify-content: space-between;
     display: flex;
-    padding-left: 100px;
-    padding-bottom: 100px;
-    padding-right: 100px;
+    gap:40px;
+    position: relative;
+    left: 190px;
+    padding-top: 20px;
+
 }
