@@ -14,6 +14,7 @@ body{
     gap:40px;
     justify-content: center;
 }
+
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -32,6 +33,39 @@ body{
     align-items: center;
     justify-content: center;
     gap:50px;
+}
+
+.book{
+    width: 100%;
+    height: 50vh;
+    /* filter: brightness(40%); */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(images/book.png);
+    
+}
+.book h1{
+    position: relative;
+    color: rgb(255, 255, 255);
+    top:170px;
+    font-size: 40px;
+    text-align: center;
+
+}
+.img img{
+    width: 20%;
+    height: 400px;
+    padding-top:10px ;
+    gap:60px;
+    background-repeat: no-repeat;
+}
+.img{
+    animation: slide 1s infinite;
+    
+    
+}
+@keyframes slide{
+    0%{
+        left:100%
+    }
 }
 @media only screen and (max-width:700px) and (min-width:300px){
     .top-nav{
@@ -54,6 +88,7 @@ body{
     .head-title h1{
         font-size: 19px;
     }
+    
 
 }
 @media only screen and (max-width:900px) and (min-width:701px){
@@ -78,4 +113,60 @@ body{
         font-size: 15px;
     }
 
+}
+/* TO BE APPLIED IN EVERY HTML */
+
+
+.team-content{
+    width:20%;
+    background-color: #a454b4;
+    border-top-left-radius: 80px;
+    color: wheat;
+    border-radius: 20px;
+    padding: 10px;
+
+  }
+  .team-content:hover{
+    background-color: rgb(161, 158, 158);
+  }
+  .name{
+    color: white;
+    font-family: "Atomic Age", system-ui;
+ 
+  }
+  .name:hover{
+    color: #a454b4;
+  }
+  .image{
+    width:20%;
+    height: 10vh;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    left: 40%;
+    border-radius: 40px;
+
+  }
+  .content-one{
+    color: white;
+    font-weight:60px;
+    font-size: 18px;
+
+  }
+  .content-one:hover{
+    color: #a454b4;
+  }
+.main-container{
+    justify-content: space-between;
+    display: flex;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+}
+.second-container{
+    justify-content: space-between;
+    display: flex;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
 }
