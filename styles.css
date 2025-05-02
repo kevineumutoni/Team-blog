@@ -203,6 +203,8 @@ body{
 footer{
     background-color: black;
     color: white;
+    font-size: 1.2em;
+
     justify-content: center;
     margin-top: 30px;
     
@@ -233,6 +235,9 @@ footer{
 }
 .alche img{
     width: 100px;  
+}
+#home{
+    border-bottom: 1px solid black;
 }
 
 @media (max-width: 700px){
@@ -269,3 +274,25 @@ footer{
         letter-spacing: 0.7px;
     }
 }
+
+.blog-list {
+    position: relative;
+    display: inline-block;
+ }
+ .blog-content a{
+    text-decoration: none;
+ }
+.blog-content {
+    position: absolute;
+   color: white;
+    /* width: 900%; */
+    padding: 10px 30px;
+    /* border-radius: 1rem; */
+    display: none;
+    z-index: 20;
+    background-color:#2c3e50;
+    margin-left: 20%;
+ }
+ .blog-list:hover .blog-content  {
+    display: block;
+ }
