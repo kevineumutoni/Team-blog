@@ -43,7 +43,7 @@ footer{
         gap: 2cm;
         padding: 70px 30px 20px;
         justify-content: center;
-        font-size: 1em;
+        font-size: 0.8em;
         letter-spacing: 1px;
     }
 }
@@ -52,7 +52,7 @@ footer{
         display: block;
         gap: 2cm;
         justify-content: center;
-        font-size: 1em;
+        font-size: 0.9em;
         letter-spacing: 1px;
     }
     footer{
@@ -60,5 +60,14 @@ footer{
         color: white;
         justify-content: center;
         
+    }
+}
+@media only screen and (max-width:299px) and (min-width:10px){
+    .foot{
+        display: block;
+        gap: 2cm;
+        justify-content: center;
+        font-size: 0.6em;
+        letter-spacing: 0.7px;
     }
 }

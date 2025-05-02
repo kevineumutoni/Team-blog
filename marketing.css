@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 .image-container{
     display: flex;
@@ -37,6 +38,9 @@
     align-items: center;
     justify-content: center;
     gap:50px;
+}
+#market{
+    border-bottom: 1px solid black;
 }
 @media only screen and (max-width:700px) and (min-width:300px){
     .top-nav{
@@ -134,3 +138,93 @@
         height:50vh;
     }
   }
+  .blog-list {
+    position: relative;
+    display: inline-block;
+ }
+ .blog-content a{
+    text-decoration: none;
+ }
+.blog-content {
+    position: absolute;
+   color: white;
+    /* width: 900%; */
+    padding: 10px 30px;
+    /* border-radius: 1rem; */
+    display: none;
+    z-index: 20;
+    background-color:#2c3e50;
+    margin-left: 20%;
+ }
+ .blog-list:hover .blog-content  {
+    display: block;
+ }
+
+ footer{
+    background-color: black;
+    color: white;
+    justify-content: center;
+    
+}
+
+.foot{
+    display: flex;
+    gap: 2cm;
+    padding: 70px 30px 20px;
+    justify-content: center;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+.accounts i{
+    color: white;
+}
+.accounts i:hover{
+    color: blue;
+}
+.others a{
+    text-decoration: none;
+    color: white;
+}
+.footerBottom{
+    background-color: rgb(46, 44, 44);
+    padding: 20px;
+    text-align: center;
+}
+.alche img{
+    width: 100px;  
+}
+
+@media (max-width: 700px){
+    .foot{
+        display: block;
+        gap: 2cm;
+        padding: 70px 30px 20px;
+        justify-content: center;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+    }
+}
+@media (max-width: 1000px){
+    .foot{
+        display: block;
+        gap: 2cm;
+        justify-content: center;
+        font-size: 0.9em;
+        letter-spacing: 1px;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        justify-content: center;
+        
+    }
+}
+@media only screen and (max-width:299px) and (min-width:10px){
+    .foot{
+        display: block;
+        gap: 2cm;
+        justify-content: center;
+        font-size: 0.6em;
+        letter-spacing: 0.7px;
+    }
+}
