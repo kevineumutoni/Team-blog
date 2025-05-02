@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Born a Crime Analysis</title>
+    <link href="blog.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Reflective Blog of Born a Crime</h1>
+    </header>
+    <div class="content-book">
+        <img src="https://m.media-amazon.com/images/I/91shjDQ3TBL._SY425_.jpg" alt="Born a Crime book cover"
+            class="author-img">
+        <h2>Mysterious Survival</h2>
+        <p>If I could give <em>Born a Crime</em> a new title, I would call it: <span class="rename-title">Mysterious
+                Survival</span>.</p>
+        <p>This title reflects the challenges Trevor Noah faced throughout his life. It captures how he navigated his
+            circumstances and adapted to the environment he lived in.</p>
+    </div>
+    <div class="content-book">
+        <h2>Reflective Blog: </h2>
+        <div class="quote">
+            "Abel wanted a traditional marriage with a traditional wife… but he never fell in love with subservient
+            women… 'He only wants a woman who is free because his dream is to put her in a cage.'"
+        </div>
+        <p>This shows a common struggle with how men and women relate to each other today. While he wants for a partner who is strong and independent, his need to have power over her comes from his own fears about gender roles.This issue can be seen from many perspectives, like the difficulty of balancing independent with being in a relationship.For example, social media often shows that women still do more housework than men.
+            Abel's view also reflects where men may admire women's abilities but still expect them to behave in certain way deep down.In today's world, there are many actions aimed at empowering women to take the first patrticipation; however, some men can react with negatively when women maintain their boundaries, similar to Abel's cage.
+            There is a huge difference between what they claim to be and what they actually do. They become challenged when they face the qualities of a strong woman.
+
+        </p>
+        <button class="reflective-button" onclick="readMore()">Read More</button>
+        <div id="personal-reflection" class="hide">
+            <p>I've seen this dynamic in my own family. My aunt was a successful businesswoman when she got married, and  her husband initially praised her ambition.However, slowly he started complaining about her work and made her doubt her self. Eventually, he pressured her to quit her job after they had kids, even though they had agreed to share responsibilities.
+                 The change was so slow that she didn't realize how much power she had lost until it was late. What I learned from this is that,although we may think some men like the qualities of strong women at first, the mentality inside them wouldn't allow them to continue inspiring it.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>Reviewed by Rigbe Welu</p>
+        <p>@2025</p>
+        <button id="go-back"><a href="#">Go back to home</a></button>
+    </footer>
+    <script>
+        function readMore() {
+            const content = document.getElementById('personal-reflection');
+            const btn = document.querySelector('.reflective-button');
+
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                btn.textContent = 'Read More';
+            } else {
+                content.style.display = 'block';
+                btn.textContent = 'Read More';
+            }
+        }
+    </script>
+</body>
+
+</html>
