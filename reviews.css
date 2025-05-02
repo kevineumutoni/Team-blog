@@ -1,1 +1,110 @@
+body{
+    margin: 0;
+}
 
+.top-nav{
+    text-align: center;
+    align-items: center;
+    background-color: rgb(202, 250, 234);
+    color: black;
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    gap:40px;
+    justify-content: center;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color: rgb(247, 212, 212);
+    font-weight: bolder;
+}
+.nav-bar a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.head-title{
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+}
+.reviews{
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    text-align: left;
+}
+
+#personalImages{
+    height: 60px;
+    border-radius: 50%;
+}
+.personalreview{
+    display: flex;
+    gap: 40px;
+    
+}
+
+#star{
+    color: orange;
+    
+}
+@media only screen and (max-width:700px) and (min-width:300px){
+    .top-nav{
+        width: 100%;
+        font-size: 12.4px;
+    }
+    .nav-bar{
+        display: grid;
+        grid-column: auto;
+        /* grid-template-columns: repeat(auto-fit, minmax(130px, 2fr)); */
+        gap: 10px;
+        padding-left: 5px;
+        font-size: 13px;
+        justify-content: start;
+    }
+    .nav-bar a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    .head-title h1{
+        font-size: 19px;
+    }
+    .reviews{
+        display: block;
+        gap: 40px;
+        padding: 40px;
+        text-align: left;
+    }
+
+}
+
+
+@media only screen and (max-width:900px) and (min-width:701px){
+    .nav-bar{
+        width: 92.4%;
+        padding: 30px;
+        font-size: 15px;
+        max-width: 100%;
+
+    }
+}
+@media only screen and (max-width:299px) and (min-width:10px){
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .head-title h1{
+        justify-content: left;
+        align-items: start;
+        align-items: left;
+        font-size: 15px;
+    }
+
+}
