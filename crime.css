@@ -32,6 +32,9 @@ body{
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
+.nav-bar a:hover{
+    color:#3498db;
+}
 .head-title{
     text-align: center;
     padding-top: 30px;
@@ -39,6 +42,8 @@ body{
     align-items: center;
     justify-content: center;
     gap:50px;
+    font-size: 1.5em;
+    color:#3498db;
 }
 
 .quote-slider {
@@ -281,7 +286,6 @@ p{
    gap:10%;
    margin-left: 5%;
    margin-right: 3%;
-  
 }
 .outsider-perspective{
     display: flex;
@@ -417,6 +421,7 @@ footer{
 .others a{
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 .footerBottom{
     background-color: rgb(46, 44, 44);
@@ -500,7 +505,7 @@ footer{
         align-items: center;
     }
     .review-ideas{
-        flex-direction: column;
+        
         width: 100%;
         gap:0%;
         margin-left: 0%;
@@ -559,5 +564,46 @@ footer{
     width: 100%;
   
 }
+
+}
+@media only screen and (min-width:769px) and (max-width:1024px){
+    .outsider-perspective{
+        flex-direction: column;
+       
+    }
+    .outsider-perspective{
+        flex-direction: column;
+       
+    }
+    .part-two{
+        flex-direction: column;
+        width: 100%;
+    }
+    .part-one{
+        flex-direction: column;
+        width: 100%;
+    }
+   
+    .review-ideas{
+        flex-direction: column;
+        width: 100%;
+        gap:0%;
+        margin-left: 0%;
+    }
+    .patriarchy{
+        width: 100%;
+      align-items: center;
+    }
+    .vl{
+        display: none;
+    }
+    .outsider-perspective{
+      flex-direction: column;
+        justify-content: space-between;
+    }
+    .image-grid{
+        margin-left: 0%;
+    }
+    
 
 }
