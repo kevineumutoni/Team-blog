@@ -366,6 +366,7 @@ p{
 #subscribe a{
     border-radius: 200px;
     padding: 100px;
+    text-decoration: none;
   
 }
 .subscribition button a{
@@ -374,7 +375,7 @@ p{
 
 }
 .summary p{
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: justify;
 }
 .sub-comment{
@@ -385,7 +386,7 @@ p{
    border-radius:20px ;
    width: 10%;
    margin-left: 20%;
-   font-size: 1.2em;
+   font-size: 1em;
 }
 *{
     padding: 0;
@@ -393,10 +394,42 @@ p{
     box-sizing: border-box;
 }
 
-/* .bottom{
-    background-color: gray;
-    padding: 5px;
-} */
+footer{
+    background-color:black;
+    color:white;
+    justify-content: center;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.foot{
+    display: flex;
+    gap: 2cm;
+    padding: 70px 30px 20px;
+    justify-content: center;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+.accounts i{
+    color:white;
+}
+.accounts i:hover{
+    color: blue;
+}
+.others a{
+    text-decoration: none;
+    color: white;
+}
+.footerBottom{
+    background-color: rgb(46, 44, 44);
+    padding: 20px;
+    text-align: center;
+}
+.alche img{
+    width: 100px;  
+}
+
 
 @media only screen and (max-width:768px) and (min-width:300px){
     .top-nav{
