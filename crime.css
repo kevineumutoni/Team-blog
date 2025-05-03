@@ -3,7 +3,7 @@ html{
 }
 body{
     overflow-x: hidden;
-    
+    font-family: poppins;
 }
 @font-face {
     font-family: 'audula';
@@ -433,6 +433,10 @@ footer{
 }
 .alche img{
     width: 100px;  
+}
+@font-face {
+    font-family: 'poppins';
+    src: url(Poppins-Medium.ttf)
 }
 
 
