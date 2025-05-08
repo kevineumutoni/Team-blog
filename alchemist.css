@@ -452,7 +452,7 @@ footer{
    color: white;
 }
 .footerBottom{
-   background-color: rgb(46, 44, 44);
+   background-color: rgb(0, 0, 0);
    padding: 20px;
    text-align: center;
 }
@@ -493,4 +493,26 @@ footer{
        font-size: 0.6em;
        letter-spacing: 0.7px;
    }
+}
+
+.blog-list {
+   position: relative;
+   display: inline-block;
+}
+.blog-content a{
+   text-decoration: none;
+}
+.blog-content {
+   position: absolute;
+  color: white;
+   /* width: 900%; */
+   padding: 20px 50px;
+   /* border-radius: 1rem; */
+   display: none;
+   z-index: 20;
+   background-color:#ffffff;
+   margin-left: 20%;
+}
+.blog-list:hover .blog-content  {
+   display: block;
 }
