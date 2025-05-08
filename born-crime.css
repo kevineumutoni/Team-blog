@@ -3,11 +3,6 @@ html{
 }
 body{
     overflow-x: hidden;
-    font-family: poppins;
-}
-@font-face {
-    font-family: 'audula';
-    src: url(Audela-Trial-Light.otf)
 }
 .top-nav{
     text-align: center;
