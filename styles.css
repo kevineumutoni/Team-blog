@@ -100,6 +100,7 @@ body{
     .team-content{
         left: 0;
         right: 0;
+        color: black;
         height: 500px;
         width: 100%;
         display: none;
@@ -149,17 +150,18 @@ body{
 
 .team-content{
     width:20%;
-    background-color: #d2d9e7;
+    background-color: #aabde2;
     border-top-left-radius: 80px;
     color: wheat;
     border-radius: 20px;
+    margin-top: 20px;
 
   }
   .team-content:hover{
     background-color: rgb(161, 158, 158);
   }
   .name{
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: "Atomic Age", system-ui;
     text-align: center;
  
@@ -179,8 +181,9 @@ body{
   }
   .content-one{
     color: rgb(46, 46, 46);
-    font-weight:60px;
-    font-size: 18px;
+    font-weight:bold;
+    padding: 20px;
+    font-size: 20px;
 
   }
   .content-one:hover{
@@ -188,7 +191,7 @@ body{
   }
 .main-container{
     display: flex;
-    gap:20px;
+    gap:70px;
     position: relative;
     left: 90px;
 }
@@ -296,3 +299,25 @@ footer{
  .blog-list:hover .blog-content  {
     display: block;
  }
+ .slider {
+    overflow: hidden;
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    margin-top: 10px;
+  }
+  .slide-track {
+    display: flex;
+    width: calc(250px * 16); /* Width = image width * number of images */
+    animation: scroll 20s linear infinite; /* Change 20s to make it faster/slower */
+  }
+  .slide-track img {
+
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Move by half since we repeated images */
+  }
